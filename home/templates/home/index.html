@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row transparent">
+        <div class="col information-area d-flex left custom-top-margin">
+            <div>
+                <h1 class="page-heading">Ett av Sveriges största utbud av reptiler, <br>groddjur och husdjursvårdsprodukter.</h1>
+                <br>
+                <a href="{% url 'animals' %}" class="btn btn-lg btn-success hvr-grow">Kolla in alla våra djur</a>
+            </div>
+        </div>
+    </div>
+    <div class="row transparent big-bottom-margin">
+        <div class="col information-area d-flex custom-top-margin right justify-content-right">
+            <div class="home-text-div">
+            <h1 class="page-heading">
+                All information du behöver <br>
+                att ta hand om dina husdjur.</h1>
+            <br>
+            <a href="{% url 'all_animals_care' %}" class="btn btn-lg btn-success right hvr-grow">Kolla in våra skötselråd</a>
+        </div>
+        </div>
+    </div>
+</div>    
+{% endblock %}

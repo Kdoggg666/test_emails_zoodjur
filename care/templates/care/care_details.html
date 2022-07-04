@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div class="container big-bottom-margin">
+    <div class="row mb-4 justify-content-center">
+        <div class="col">
+            <a href="{% url 'all_animals_care' %}" class="btn btn-lg btn-warning hvr-grow"><i class="fas fa-arrow-left"></i> Back to all Care Guides</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="div text-white text-center animal-details-section box-shadow">
+                {% if animal.image_url %}
+                        <img class="w-50" src="{{ animal.image_url }}" alt="{{ animal.name }}">
+                    {% else %}
+                        <img class="w-50" src="https://res.cloudinary.com/dyxe4g62g/image/upload/v1628947987/images/albums/MS4/no-image_pbaf3y.png" alt="{{ animal.name }}">
+                    {% endif %}
+                <h2>{{ animal.name|title }}</h1>
+                <h5>(<em>{{ animal.latin_name }}</em>)</h5>
+                        <h3 class="underline left">Skötselråd:</h3>
+                        <p class="left">{{ care.care_guide }}</p>
+                        <br>
+                        <h3 class="underline right">Burinställning:</h3>
+                        <p class="right">{{ care.cage_setup }}</p>
+                        <br>
+                        <h3 class="underline left">Belysning:</h3>
+                        <p class="left">{{ care.lighting }}</p>
+                        <br>
+                        <h3 class="underline right">Värme:</h3>
+                        <p class="right">{{ care.heating }}</p>
+                        <br>
+                        <h3 class="underline left">Matning:</h3>
+                        <p class="left">{{ care.feeding_schedule }}</p>
+                        <br>
+                        <h3 class="underline right">Möjliga hälsoproblem:</h3>
+                        <p class="right">{{ care.known_problems }}</p>
+                        <br>
+                        <h3 class="underline">Mer information:</h3>
+                        <p><a href="{{ care.other_information }}" class="more-information-link hvr-grow" target="_blank" >{{ care.other_information_name|title }}</a></p>
+                        <br>
+    
+                <a href="{% url 'animal_details' animal.id %}" class="btn btn-lg btn-warning hvr-grow">Se {{ animal.name|title }} i vår butik</a>
+                {% if user.is_superuser %}
+                    {% if care.care_guide %}
+                    <a href="{% url 'edit_care' animal.id %}" class="btn btn-lg btn-warning hvr-grow">Edit {{ animal.name|title }} Care Guide</a>
+                    <a type="button" class="btn btn-lg btn-danger hvr-grow" data-toggle="modal"
+                            data-target="#careModal">
+                            Delete {{ animal.name|title }} Care Guide</a>
+                    {% endif %}
+                    
+                {% endif %}    
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Confirmation modal -->
+<div class="modal fade" id="careModal" tabindex="-1" role="dialog" aria-labelledby="careModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-white text-center animal-details-section box-shadow">
+            <div class="modal-header">
+                <h5 class="modal-title" id="careModalLabel">Delete the {{ animal.name|title }} care guide?</h5>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to permanently remove the {{ animal.name|title }} care guide from GbgZoo.se? This can NOT
+                    be undone!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-warning hvr-grow" data-dismiss="modal">Cancel</button>
+                <a href="{% url 'delete_care' animal.id %}" class="btn btn-danger hvr-grow">Delete the 
+                    {{ animal.name|title }} care guide</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+

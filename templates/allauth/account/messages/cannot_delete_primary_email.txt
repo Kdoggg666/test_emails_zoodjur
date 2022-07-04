@@ -1,0 +1,2 @@
+{% load i18n %}
+{% blocktrans %}Du kan inte ta bort din primära e-postadress ({{email}}).{% endblocktrans %}

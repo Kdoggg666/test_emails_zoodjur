@@ -1,0 +1,39 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+{% load account %}
+
+{% block head_title %}{% trans "Bekräfta e-postadress" %}{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6 animal-details-section box-shadow">
+            <h1 class="white text-center">{% trans "Bekräfta e-postadress" %}</h1>
+
+            {% if confirmation %}
+
+            {% user_display confirmation.email_address.user as user_display %}
+
+            <p class="white text-center">{% blocktrans with confirmation.email_address.email as email %}Vänligen bekräfta det <a class="link-custom"
+                    href="mailto:{{ email }}">{{ email }}</a> är en e-postadress för
+                {{ user_display }}.{% endblocktrans %}</p>
+
+            <form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
+                {% csrf_token %}
+                <button type="submit">{% trans 'Bekräfta' %}</button>
+            </form>
+
+            {% else %}
+
+            {% url 'account_email' as email_url %}
+
+            <p class="white text-center">{% blocktrans %}Denna e-postbekräftelselänk har upphört att gälla eller är ogiltig. Vänligen <a
+                    href="{{ email_url }}">utfärda en ny begäran om bekräftelse via e-post</a>.{% endblocktrans %}</p>
+
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

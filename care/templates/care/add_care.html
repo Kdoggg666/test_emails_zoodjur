@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8 text-center animal-details-section box-shadow mb-4 text-white">
+                <h2>Add a Care Guide</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-8 animal-details-section box-shadow big-bottom-margin">
+                <form method="POST" action="#" class="form mb-4" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for field in form %}
+                            {{ field | as_crispy_field }}
+                    {% endfor %}   
+                    <div class="row mt-4">
+                        <div class="text-center">
+                            <a class="btn btn-lg btn-danger hvr-grow" href="{% url 'animals' %}">Cancel</a>
+                            <button class="btn btn-lg btn-warning hvr-grow" type="submit">Add Care Guide</button>
+                        </div>                 
+                </form>
+                
+                </div>
+            </div>            
+        </div>
+    </div>
+{% endblock %}

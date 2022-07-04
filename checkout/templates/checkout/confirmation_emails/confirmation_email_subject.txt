@@ -1,0 +1,1 @@
+Zoodjur.se Bekräftelse för ordernummer {{ order.order_number }} 

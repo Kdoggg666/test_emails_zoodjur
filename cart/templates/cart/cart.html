@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+{% load static %}
+{% load cart_tools %}
+
+
+{% block content %}
+    <div class="container text-center animal-details-section box-shadow big-bottom-margin text-white">
+        <div class="row">
+            <div class="col-12">
+                <h2 class=" mb-4">Kundvagn</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-white">
+                {% if cart_items %}
+                    <div class="table-responsive rounded">
+                        <table class="table table-sm table-borderless text-white">
+                            <thead class="text-black">
+                                <tr>
+                                    <th scope="col">Produktinformation</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Pris</th>
+                                    <th scope="col">St</th>
+                                    <th scope="col">Delsumma</th>
+                                </tr>
+                            </thead>
+
+                            {% for item in cart_items %}
+                                <tr>
+                                    <td class="p-3 w-25">
+                                        {% if item.animal.image_url %}
+                                            <img class="img-fluid rounded" src="{{ item.animal.image_url }}" alt="{{ item.animal.name }}">
+                                        {% else %}
+                                             <img class="img-fluid rounded" src="#" alt="{{ item.animal.name }}">
+                                        {% endif %}
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0"><strong>{{ item.animal.name }}</strong></p>
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0">{{ item.animal.price }}SEK</p>
+                                    </td>
+                                    <td class="py-3 w-25">
+                                        <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
+                                            {% csrf_token %}
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                        <button class="decrement-qty btn btn-sm btn-black rounded-0" 
+                                                            data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                                            <span>
+                                                                <i class="fas fa-minus fa-sm"></i>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                    <input class="form-control form-control-sm qty_input" type="number"
+                                                        name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                                        data-item_id="{{ item.item_id }}"
+                                                        id="id_qty_{{ item.item_id }}">
+                                                    <div class="input-group-append">
+                                                        <button class="increment-qty btn btn-sm btn-black rounded-0"
+                                                            data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                                            <span>
+                                                                <i class="fas fa-plus fa-sm"></i>
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <a class="update-link text-info"><small class="mouse-pointer">
+                                            Uppdatera</small></a>
+                                        <a class="remove-item text-danger  float-right" id="remove_{{ item.item_id }}"><small class="mouse-pointer">Ta bort</small></a>
+                                    </td>
+                                    <td class="py-3">
+                                        <p class="my-0">{{ item.animal.price | calc_subtotal:item.quantity }}SEK</p>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            <tr>
+                                <td colspan="5" class="pt-5 text-right">
+                                    <h6><strong>Kundvagn totalt: {{ total|floatformat:2 }}SEK</strong></h6>
+                                    <h6>Leverans: {{ delivery|floatformat:2 }}SEK</h6>
+                                    <h4 class="mt-4"><strong>Grand Total: {{ grand_total|floatformat:2 }}SEK</strong></h4>
+                                    {% if free_delivery_delta > 0 %}
+                                        <p class="mb-1 text-danger">
+                                            Du kan få gratis leverans genom att bara spendera <strong>${{ free_delivery_delta }}</strong> mer!
+                                        </p>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" class="text-right">
+                                    <a href="{% url 'animals' %}" class="btn btn-lg btn-warning hvr-grow">
+                                        <span class="icon">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </span>
+                                        <span class="text-uppercase">Fortsätt handla</span>
+                                    </a>
+                                    <a href="{% url 'checkout' %}" class="btn btn-lg btn-warning hvr-grow">
+                                        <span class="text-uppercase">Säker utcheckning</span>
+                                        <span class="icon">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                {% else %}
+                    <p class="lead mb-5">Din vagn är tom.</p>
+                    <a href="{% url 'animals' %}" class="btn btn-lg btn-warning hvr-grow">
+                        <span class="icon">
+                            <i class="fas fa-chevron-left"></i>
+                        </span>
+                        <span class="text-uppercase">Fortsätt handla</span>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include "includes/quantity_input_script.html" %}
+
+<script type="text/javascript">
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
+
+    // Remove item and reload on click
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('product_size');
+        var url = `/cart/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
+</script>
+{% endblock %}

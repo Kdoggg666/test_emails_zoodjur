@@ -1,0 +1,21 @@
+Hej {{ order.full_name }}!
+
+Detta är en bekräftelse på din beställning hos Zoodjur.se. Din beställningsinformation finns nedan:
+
+Ordernummer: {{ order.order_number }}
+Orderdatum: {{ order.date }}
+
+Ordersumma: {{ order.order_total }}SEK
+Leverans: {{ order.delivery_cost }}SEK
+Totalsumma: {{ order.grand_total }}SEK
+
+Din beställning kommer att skickas till {{ order.street_address1 }}, {{ order.town_or_city }}, {{ order.country }}.
+
+Vi har ditt telefonnummer registrerat som {{ order.phone_number }}.
+
+Om du har några frågor är du välkommen att kontakta oss på {{ contact_email }}.
+
+Tack för din beställning!
+
+MvH
+Zoodjur.se

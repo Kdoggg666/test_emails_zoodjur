@@ -1,0 +1,18 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Verifiera din e-postadress" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 animal-details-section box-shadow">
+            <h1 class="white text-center">{% trans "Verifiera din e-postadress" %}</h1>
+
+            <p class="white text-center">{% blocktrans %}Vi har skickat ett e-postmeddelande till dig för verifiering. Följ länken för att slutföra
+                registreringsprocessen. Kontakta oss om du inte får den inom några minuter.{% endblocktrans %}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

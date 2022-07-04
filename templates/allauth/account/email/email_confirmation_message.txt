@@ -1,0 +1,9 @@
+{% load account %}{% user_display user as user_display %}{% load i18n %}{% autoescape off %}{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}Hej från {{ site_name }}!
+
+u får detta e-postmeddelande eftersom {{ user_display }} har gett din som en e-postadress för att koppla sitt konto.
+
+För att bekräfta att detta är korrekt, gå till {{ activate_url }}
+{% endblocktrans %}
+{% blocktrans with site_name=current_site.name site_domain=current_site.domain %}Tack från {{ site_name }}!
+{{ site_domain }}{% endblocktrans %}
+{% endautoescape %}

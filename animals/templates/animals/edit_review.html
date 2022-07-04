@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %} 
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-8 text-center animal-details-section box-shadow mb-4 text-white">
+                <h2>Edit Review</h2>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-8 animal-details-section box-shadow big-bottom-margin">
+                <form  method="POST" action="#" class="form mb-2" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for field in form %}
+                            {{ field | as_crispy_field }}
+                    {% endfor %}
+                    <div class="row">
+                        <div class="text-center">
+                            <a class="btn btn-lg btn-danger hvr-grow" href="{% url 'animals' %}">Cancel</a>
+                            <button class="btn btn-lg btn-warning hvr-grow" type="submit">Save Changes</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>            
+        </div>
+    </div>
+{% endblock %}

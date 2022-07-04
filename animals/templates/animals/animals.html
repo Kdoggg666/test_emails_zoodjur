@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div class="container mb-4">
+    <div class="row">
+        <div class="col text-center">
+            <a href="{% url 'animals' %}" class="btn btn-lg btn-success right hvr-grow">Alla Djur</a>
+            <a href="{% url 'animals' %}?category=snakes" class="btn btn-lg btn-success right hvr-grow">Ormar</a>
+            <a href="{% url 'animals' %}?category=lizards" class="btn btn-lg btn-success right hvr-grow">Ödlar</a>
+            <a href="{% url 'animals' %}?category=amphibians" class="btn btn-lg btn-success right hvr-grow">Groddjur</a>
+            <a href="{% url 'animals' %}?category=rodents" class="btn btn-lg btn-success right hvr-grow">Gnagare</a>
+            <a href="{% url 'animals' %}?category=birds" class="btn btn-lg btn-success right hvr-grow">Fåglar</a>
+            <a href="{% url 'animals' %}?category=spiders" class="btn btn-lg btn-success right hvr-grow">Spindlar</a>
+            <a href="{% url 'animals' %}?category=insects" class="btn btn-lg btn-success right hvr-grow">Insekter</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="container big-bottom-margin">
+    <div class="row justify-content-center">
+        <div class="col-12 pagination justify-content-center mb-4">
+                <span class="current">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+                </span>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        {% for animal in page_obj %}
+            <div class="col-sm-6 image-link hvr-grow mb-4">
+                <img class="animal-details-image box-shadow" src="{{ animal.image_url }}" alt="{{ animal.name }}">
+                <h1><a href="{% url 'animal_details' animal.id %}"><span class="centered-image-text animal-logo-image-text">{{ animal.name|title }}</span></a></h1>
+            </div>
+        {% endfor %}    
+    </div>
+    <!-- Pagination -->
+    <div class="row justify-content-center">
+        <div class="col-12 pagination justify-content-center">
+            <span class="step-links">
+                {% if page_obj.has_previous %}
+                    <a href="?page=1">&laquo; first</a>
+                    <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+        
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}">next</a>
+                    <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+            </span>
+        </div>
+    </div>
+</div>
+{% endblock %}

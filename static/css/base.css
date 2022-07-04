@@ -1,0 +1,337 @@
+/*-- Google Fonts --*/
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+html {
+    background: url(https://res.cloudinary.com/dyxe4g62g/image/upload/v1616166016/zukfkcyxcflbfeoibg4r.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.white {
+    color: #fff !important;
+}
+
+header {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.link-custom {
+    text-decoration: none;
+    color: rgba(251, 255, 41, 0.9)
+}
+
+.link-custom:hover {
+    text-decoration: none;
+    color: rgba(251, 255, 41, 0.9)
+}
+
+/*-- Navbar --*/
+.navbar {
+    height: 150px;
+    background: rgba(0, 0, 0, 0.6) !important;
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-size: 50px;
+    color: greenyellow !important;
+    text-shadow: black 4px 4px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.subtext-logo {
+    font-size: 35px;
+}
+
+.navbar-nav li {
+    font-size: 25px;
+    font-family: 'Otomanopee One', sans-serif;
+
+}
+
+.navbar-nav>li>a {
+    color: greenyellow !important;
+    text-shadow: 2px 2px black;
+}
+
+.navbar-nav>li>a:hover {
+    color: rgba(251, 255, 41, 0.9) !important;
+}
+
+.search-bar-custom {
+    background-color: rgba(251, 255, 255, 0.6);
+}
+
+.no-pads {
+    padding: 0;
+}
+
+/*-- Information sections --*/
+.information-area {
+    height: 400px;
+    margin: 25px;
+    padding: 10px;
+}
+
+.more-information-link {
+    text-decoration: none;
+    color: rgba(251, 255, 41, 0.9);
+}
+
+.more-information-link:hover {
+    color: yellowgreen;
+}
+
+.custom-top-margin {
+    margin-top: 100px;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.home-text-div {
+    width: 100%;
+}
+
+.transparent {
+    background: transparent;
+}
+
+.page-heading {
+    color: #fff;
+    text-shadow: black 5px 5px;
+    font-size: 60px;
+}
+
+.big-bottom-margin {
+    margin-bottom: 250px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.underline-div {
+    border-bottom: 2px solid white;
+}
+
+.info-list {
+    margin-top: 15px;
+}
+
+/*-- Footer --*/
+footer {
+    height: 170px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: greenyellow;
+}
+
+footer a i {
+    font-size: 50px;
+    color: white;
+    margin: 0 10px 0 10px;
+}
+
+.facebook:hover {
+    color: #4267B2;
+}
+
+.twitter:hover {
+    color: #1DA1F2;
+}
+
+.instagram:hover {
+    color: #C13584;
+}
+
+.youtube:hover {
+    color: #FF0000;
+}
+
+/*-- Animal Details --*/
+.animal-details-image {
+    height: 250px;
+    width: auto;
+}
+
+.animal-details-section {
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+.image-link {
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.image-link img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-link a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.centered-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animal-logo-image-text {
+    color: seashell;
+    text-shadow: 2px 2px black;
+}
+
+.box-shadow {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
+}
+
+.review-link {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.review-link:hover {
+    color: yellow;
+}
+
+.text-yellow {
+    color: yellow;
+}
+
+/*-- Media Queries --*/
+@media only screen and (max-width: 991px) {
+    .navbar-collapse {
+        padding: 15px;
+        top: 50px !important;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 15px;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .footer-info-divs {
+        display: none;
+    }
+}
+
+/*-- pagination --*/
+.pagination {
+    font-size: 15px;
+    color: greenyellow;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.pagination a {
+    color: rgba(251, 255, 41, 0.9);
+    text-decoration: none;
+}
+
+/*- forms -*/
+label {
+    color: yellowgreen;
+    font-size: 20px;
+
+}
+
+/*-- Modal --*/
+.modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.errorlist li {
+    color: white;
+}
+
+/*-- money total nav --*/
+.money-total {
+    font-size: 20px;
+}
+
+/*-- toasts --*/
+.message-container {
+    position: fixed;
+    top: 175px;
+    left: 20px;
+    z-index: 99999999999;
+}
+
+.custom-toast-body {
+    color: white;
+    background: black;
+    text-align: center;
+}
+
+.custom-toast-header {
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.custom-toast-header strong {
+    color: chartreuse;
+}
+
+.toast-close {
+    position: absolute;
+    right: 5px;
+}
+
+.toast-close span {
+    color: white;
+    border: 1px solid white;
+}
+
+.btn {
+    margin: auto 3px auto 3px;
+}
+
+.mouse-pointer {
+    cursor: pointer;
+}

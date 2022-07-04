@@ -1,0 +1,18 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Registrering stängd" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6 animal-details-section box-shadow">
+            <h1 class="white text-center">{% trans "Registrering stängd" %}</h1>
+
+            <p class="white text-center">{% trans "Vi är ledsna, men registreringen är för närvarande stängd." %}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

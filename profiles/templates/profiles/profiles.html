@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-8 text-center animal-details-section box-shadow mb-4 text-white">
+            <h2>Mina sidor</h2>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-8 animal-details-section box-shadow mb-4">
+            <form  method="POST" action="#" class="form mb-4" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in form %}
+                        {{ field | as_crispy_field }}
+                {% endfor %} 
+                <div class="row">
+                    <div class="text-center">
+                        <br>
+                        <button class="btn btn-lg btn-warning hvr-grow" type="submit">Uppdatera min information</button>
+                    </div>
+                </div>                   
+            </form>
+        </div>     
+        <div class="col-8 animal-details-section box-shadow big-bottom-margin text-white">
+            <p>Beställningshistorik</p>
+            <div class="order-history table-responsive">
+                <table class="table table-sm table-borderless text-white">
+                   <thead>
+                        <tr>
+                            <th>Ordernummer</th>
+                            <th>Datum</th>
+                            <th>föremål</th>
+                            <th>Ordersumma</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for order in orders %}
+                            <tr>
+                                <td>
+                                    <a class="link-custom hvr-grow" href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}" >{{ order.order_number|truncatechars:6 }}</a>
+                                </td>
+                                <td>{{ order.date }}</td>
+                                <td>
+                                    <ul class="list-unstyled">
+                                        {% for item in order.lineitems.all %}
+                                                {{ item.animal.name }} x {{ item.quantity }}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                                <td>${{ order.grand_total }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>       
+    </div>
+</div>
+{% endblock %}

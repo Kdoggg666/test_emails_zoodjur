@@ -1,0 +1,1424 @@
+[{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2021-07-11T11:57:53.469Z",
+        "user": 2,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "kenanwright@gmail.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2021-07-11T13:50:06.714Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Western Hognose Snake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2021-07-13T16:44:34.062Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Ball Python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Animal id\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2021-07-14T15:58:01.193Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Bearded Dragon",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2021-07-14T16:01:40.646Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "Red Eyed Tree Frog",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2021-07-14T16:20:34.233Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "Western Hognose Snake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2021-07-14T16:21:28.298Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "Western Hognose Snake",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2021-07-14T16:25:26.790Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "Western Hognose Snake",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Temperament\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2021-07-14T16:47:46.050Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "5",
+        "object_repr": "Kenyan sand boa",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2021-07-14T17:00:03.278Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Ball Python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Country\", \"Max length\", \"Lifespan\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2021-07-14T17:00:42.215Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "5",
+        "object_repr": "Kenyan sand boa",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Country\", \"Max length\", \"Lifespan\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2021-07-14T17:01:23.634Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "Western Hognose Snake",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Country\", \"Max length\", \"Lifespan\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2021-07-14T17:02:39.835Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "Red Eyed Tree Frog",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Country\", \"Max length\", \"Lifespan\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2021-07-14T17:02:44.760Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Ball Python",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2021-07-14T17:03:05.129Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Bearded Dragon",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Country\", \"Max length\", \"Lifespan\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2021-07-14T17:20:44.085Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "6",
+        "object_repr": "Boa Constrictor",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2021-07-14T17:28:52.037Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "7",
+        "object_repr": "Garter snake",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2021-07-14T17:33:39.489Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "8",
+        "object_repr": "Burmese Python",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2021-07-17T09:38:35.612Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Ball Python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Temperature\", \"Care guide\", \"Cage setup\", \"Lighting\", \"Heating\", \"Feeding schedule\", \"Known problems\", \"Other information\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2021-07-17T14:35:33.563Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "9",
+        "object_repr": "collared lizard",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2021-07-17T14:51:36.778Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "10",
+        "object_repr": "leopard gecko",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2021-07-17T14:59:47.400Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "11",
+        "object_repr": "Ackie Monitor",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2021-07-17T15:08:21.637Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Bearded Dragon",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Temperature\", \"Care guide\", \"Cage setup\", \"Lighting\", \"Heating\", \"Feeding schedule\", \"Known problems\", \"Other information\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2021-07-17T15:17:10.017Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "12",
+        "object_repr": "frilled dragon",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2021-07-17T15:25:05.833Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "13",
+        "object_repr": "Crested Gecko",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2021-07-18T10:37:41.185Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "13",
+        "object_repr": "Crested Gecko",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Other information name\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2021-07-18T10:37:47.928Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "12",
+        "object_repr": "frilled dragon",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Other information name\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2021-07-18T10:38:06.308Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "11",
+        "object_repr": "Ackie Monitor",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Other information name\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2021-07-18T10:38:25.328Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "10",
+        "object_repr": "leopard gecko",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Other information name\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2021-07-18T10:38:35.896Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "9",
+        "object_repr": "collared lizard",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Other information name\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2021-07-18T10:39:06.519Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Bearded Dragon",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Other information name\"]}}]"
+    }
+}, {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2021-07-18T10:40:24.342Z",
+        "user": 2,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Ball Python",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Other information name\"]}}]"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add site",
+        "content_type": 7,
+        "codename": "add_site"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change site",
+        "content_type": 7,
+        "codename": "change_site"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete site",
+        "content_type": 7,
+        "codename": "delete_site"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view site",
+        "content_type": 7,
+        "codename": "view_site"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add email address",
+        "content_type": 8,
+        "codename": "add_emailaddress"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change email address",
+        "content_type": 8,
+        "codename": "change_emailaddress"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete email address",
+        "content_type": 8,
+        "codename": "delete_emailaddress"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view email address",
+        "content_type": 8,
+        "codename": "view_emailaddress"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add email confirmation",
+        "content_type": 9,
+        "codename": "add_emailconfirmation"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change email confirmation",
+        "content_type": 9,
+        "codename": "change_emailconfirmation"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete email confirmation",
+        "content_type": 9,
+        "codename": "delete_emailconfirmation"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view email confirmation",
+        "content_type": 9,
+        "codename": "view_emailconfirmation"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add social account",
+        "content_type": 10,
+        "codename": "add_socialaccount"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change social account",
+        "content_type": 10,
+        "codename": "change_socialaccount"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete social account",
+        "content_type": 10,
+        "codename": "delete_socialaccount"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view social account",
+        "content_type": 10,
+        "codename": "view_socialaccount"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add social application",
+        "content_type": 11,
+        "codename": "add_socialapp"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change social application",
+        "content_type": 11,
+        "codename": "change_socialapp"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete social application",
+        "content_type": 11,
+        "codename": "delete_socialapp"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view social application",
+        "content_type": 11,
+        "codename": "view_socialapp"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add social application token",
+        "content_type": 12,
+        "codename": "add_socialtoken"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change social application token",
+        "content_type": 12,
+        "codename": "change_socialtoken"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete social application token",
+        "content_type": 12,
+        "codename": "delete_socialtoken"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view social application token",
+        "content_type": 12,
+        "codename": "view_socialtoken"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add animal",
+        "content_type": 13,
+        "codename": "add_animal"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change animal",
+        "content_type": 13,
+        "codename": "change_animal"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete animal",
+        "content_type": 13,
+        "codename": "delete_animal"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view animal",
+        "content_type": 13,
+        "codename": "view_animal"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add category",
+        "content_type": 14,
+        "codename": "add_category"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change category",
+        "content_type": 14,
+        "codename": "change_category"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete category",
+        "content_type": 14,
+        "codename": "delete_category"
+    }
+}, {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view category",
+        "content_type": 14,
+        "codename": "view_category"
+    }
+}, {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$sIJr0vSHQCZmLdXkAPtDoJ$IFJq8iwtGxodFMqpKtJR8c8WMwjrepj9yPH6WrWXsNo=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "igor",
+        "first_name": "",
+        "last_name": "",
+        "email": "aa@aa.aa",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-07-11T11:34:38.960Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$YaPJXvy36oiJ10XHHjIue5$8CQ69ltnFDsnvlGUUPq8jSfS9PImfngDWBbWgcsmLHE=",
+        "last_login": "2021-07-27T16:30:13.195Z",
+        "is_superuser": true,
+        "username": "kenan",
+        "first_name": "",
+        "last_name": "",
+        "email": "kenanwright@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2021-07-11T11:55:26.682Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$RJnvkoXp3aEN6QPe3wHd5Z$8a6n8+EKLk1TIw6AUkQla2kxRYHnmpVIXf84fQ4dc3k=",
+        "last_login": "2021-07-22T16:42:17.951Z",
+        "is_superuser": false,
+        "username": "testing",
+        "first_name": "",
+        "last_name": "",
+        "email": "test@test.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2021-07-22T16:41:57.227Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "sites",
+        "model": "site"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "account",
+        "model": "emailaddress"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "account",
+        "model": "emailconfirmation"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "socialaccount",
+        "model": "socialaccount"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "socialaccount",
+        "model": "socialapp"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "socialaccount",
+        "model": "socialtoken"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "animals",
+        "model": "animal"
+    }
+}, {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "animals",
+        "model": "category"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "mb5m0gty4875m6xneijb7wa5tjv5t4w7",
+    "fields": {
+        "session_data": ".eJx9j7tuwyAUhl8FMSOE8Q1nzN4pUxVH6HCzSR2ojKkaVX33YikZsnQ833_R-X-wvNmUYLIJH_D5PGIprymGJx0xQYwg3hI04veY0QxfFiU_BWtQzBsd8YWg_2OnrHXBLi_L_Rn1AUFCHzZA2CsumGAJeZtlTnaV3pRn-CtToIt9F8wVwhSpjmFbvaK7hT7URN-iscvx4X0pmCHNJT1UXLSVg8bVbW1Mw6Atd98oJ2zHDAjFLfRuqIRymvcd4zUzru56GKAyQuylqczxZa39_vTrHR_Y7x_sC2uD:1m6cna:zZgdFShE4-JU4H9wmR7_hO2HlP4KIs6mNudMJMzhwj8",
+        "expire_date": "2021-08-05T17:47:54.900Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "n44eo6g6hw9v0xxgcocd3cvq6refimv4",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAURP-FtSG8Hy7d9xvIhQtSNZCUdmX8d9ukC13OnDPzJgG2tYZt5CXMSK5EkMtvFyE9czsAPqDdO029rcsc6aHQkw46dcyv2-n-HVQYdV97LpzmBVSRWiIqBnrPVsXismEILooMtnjuYknCGiYkwyKNBQ8cnSOfL9XwN6k:1m2Y3Y:23FpoX8wMaVH_RtzyHPS_K-7rS3Jmoh8RvC9NClvc8s",
+        "expire_date": "2021-07-25T11:55:32.932Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "qex17wgep3ozlp6atrahndl5v1tt1spd",
+    "fields": {
+        "session_data": ".eJxVjrtuwzAMRX9F4GwIsvySM2bv1DEOBOplK3HlwoyBBkX-PTLgoR157uElf0Hj9pj0Rn7V0cEJJBR_mUF792kP3A3TuHC7pMcaDd8VfqTEPxbn5_Ph_iuYkKa83ZdSNWXAOlRN5VwtsMlzV5ugfCscKiM9dqEvlQlWdq2QlXChajvssXRK7aXkieKStP_5jusTTiKzr8xw9JRPXC4DaH2jbBx0gIKJgsmmYAN8btZmHLZ5fjKKY_KOxcSQWH4aEx_geoXXG_vMWg8:1m8Py9:GiRcV7SXCVXOlAv1zjUymmQ-wYM8SacDGRd4ZTUcNbo",
+        "expire_date": "2021-08-10T16:30:13.246Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "t2ytzro2iltf89lx0vverur4jl20qwtx",
+    "fields": {
+        "session_data": "eyJfbWVzc2FnZXMiOiJbW1wiX19qc29uX21lc3NhZ2VcIiwgMCwgMjUsIFwiWW91IGhhdmUgc2lnbmVkIG91dC5cIl1dIn0:1m6brx:qaVohaJCJQML0mOiqubXU98NeRTMfxvYkWmcGieU1Io",
+        "expire_date": "2021-08-05T16:48:21.209Z"
+    }
+}, {
+    "model": "sessions.session",
+    "pk": "wd20rvabz1c0u5ahlowhclfk1wsve7ht",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAURP-FtSG8Hy7d9xvIhQtSNZCUdmX8d9ukC13OnDPzJgG2tYZt5CXMSK5EkMtvFyE9czsAPqDdO029rcsc6aHQkw46dcyv2-n-HVQYdV97LpzmBVSRWiIqBnrPVsXismEILooMtnjuYknCGiYkwyKNBQ8cnSOfL9XwN6k:1m3hDz:-re7uLLHq0QPC57NRcpegiQM4Gnqfhv4H0y8_777r4o",
+        "expire_date": "2021-07-28T15:55:03.589Z"
+    }
+}, {
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+}, {
+    "model": "account.emailaddress",
+    "pk": 1,
+    "fields": {
+        "user": 2,
+        "email": "kenanwright@gmail.com",
+        "verified": true,
+        "primary": true
+    }
+}, {
+    "model": "account.emailaddress",
+    "pk": 2,
+    "fields": {
+        "user": 3,
+        "email": "test@test.com",
+        "verified": true,
+        "primary": true
+    }
+}, {
+    "model": "animals.category",
+    "pk": 1,
+    "fields": {
+        "name": "snakes"
+    }
+}, {
+    "model": "animals.category",
+    "pk": 2,
+    "fields": {
+        "name": "lizards"
+    }
+}, {
+    "model": "animals.category",
+    "pk": 3,
+    "fields": {
+        "name": "amphibians"
+    }
+}, {
+    "model": "animals.animal",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "animal_id": "0001",
+        "name": "Ball Python",
+        "latin_name": "Python regius",
+        "country": "West and Central Africa",
+        "climate": "arrid",
+        "temperament": "Docile",
+        "food": "Rodents",
+        "min_tank_size": "90cm x 60cm",
+        "max_length": "1.2m",
+        "lifespan": "30",
+        "description": "The ball python (Python regius), also called the royal python, is a python species native to West and Central Africa, where it lives in grasslands, shrublands and open forests. It is listed as Least Concern on the IUCN Red List because of its wide distribution. It is threatened by hunting for its meat and for the international pet trade. This nonvenomous constrictor is the smallest of the African pythons, growing to a maximum length of 182 cm (72 in). The name 'ball python' refers to its tendency to curl into a ball when stressed or frightened.",
+        "price": "700.00",
+        "image_url": "https://res.cloudinary.com/dyxe4g62g/image/upload/v1626005649/images/albums/MS4/animals/ball-python_gfiuo0.jpg",
+        "temperature": "30",
+        "care_guide": "Always have fresh, clean water available for your ball python. Check the water daily. The size of the water dish is up to you. If it is large enough for the ball python to crawl in to and soak, sooner or later your snake will make the most of the opportunity – ball pythons seem to enjoy a nice soak from time to time. Ensure that the water bowl is not too deep for juvenile animals – 1 inch or so will suffice. Snakes of many species will defecate in their water bowls from time to time, so be prepared to clean and disinfect the water bowl. The water bowl should be cleaned and disinfected on a weekly basis. Having a spare water bowl for such occasions can be handy, so that one may be used while the other is being cleaned.\r\n\r\nBall pythons are generally shy and will spend much of their time hiding. Your ball python may initially see you as a threat and it must learn who you are. The goal is to establish trust between you and your snake.\r\n\r\nAlways support your ball python’s body and avoid fast movements. Once a ball python realizes that you will not hurt it they often seem to enjoy being handled. Some ball pythons may try to hide when handled and occasionally there are ones that may even bite due to excessive fear. These ball pythons may require a bit more time to settle in and establish trust. A ball python’s bite is a superficial wound. If a snake looks like it is going to strike, it is best to not handle it. Relax when holding your animal – sit down and give the animal a chance to settle.",
+        "cage_setup": "Newspapers and paper towels are the cheapest and easiest substrates for ball pythons with regards to cleaning and disinfecting – out with the old, in with the new. Cypress mulch and orchid bark are great substrates for controlling humidity, but remember that too much humidity can be as detrimental (if not more) as too little. Never use any substrate containing cedar, as it contains oils that can be deadly to reptiles! Avoid sand, shavings and peat bedding.\r\n\r\nThe ideal Ball Python setup is one with plenty of hiding spaces and cover for the snake to feel secure. Because of the humidity requirements bio-active setups are perfect for this species. Make sure to have at least one hiding spot such as a cave on either end of the enclosure as to provide the snake the opportunity to regulate its temperature. \r\n\r\nA humid hide is also highly recommended as this will allow the snake to temporarily increase its humidity and help with shedding issues.",
+        "lighting": "12 hours a day of normal light is recommended. As this species is nocturnal a basking lamp is not required. Special UVB lamps are not required but may be beneficial.",
+        "heating": "As Ball Pythons are nocturnal, we recommend under tank heating such as heat mats or heat cable connected to a thermostat. The thermostat will ensure the correct temperature is always maintained.",
+        "feeding_schedule": "Feed adult ball pythons every 1 to 2 weeks and younger ball pythons weekly as they need this energy to grow. Do not be alarmed if a well-started ball python goes off feed during the cooler, drier times of the year, as this is common in captivity. Snakes generally do not eat while they are in the shed cycle.",
+        "known_problems": "Some snakes may not eat for several hours or longer after being handled, so avoid handling if you plan to feed. After a snake has eaten it may be a good idea to limit the handling because it may be uncomfortable for the animal. Avoid putting your snake’s cage in a heavy traffic area, excessive movement, and other pets should be avoided.\r\n\r\nBall pythons are well-known for not eating at certain times throughout the year, particularly in the winter months. Be prepared for the possibility of your ball python going off feed, and keep an observant eye on the snake’s overall condition and body weight. This is typically nothing to worry about with healthy, well-established pythons, although it can be extremely frustrating to the snake keeper. If your ball python is healthy, continue your husbandry routine as usual, but keep the amount of handling to a minimum. Offer your ball python food every 10 to 14 days until it is interested in eating again, as the snake will eventually resume feeding normally.",
+        "other_information": "https://www.reptilesmagazine.com/ball-python-care-sheet/",
+        "other_information_name": "Reptiles Magazine"
+    }
+}, {
+    "model": "animals.animal",
+    "pk": 2,
+    "fields": {
+        "category": 2,
+        "animal_id": "0002",
+        "name": "Bearded Dragon",
+        "latin_name": "Pagona vitaceps",
+        "country": "Australia",
+        "climate": "Desert",
+        "temperament": "Docile",
+        "food": "Insects",
+        "min_tank_size": "120cm x 60cm",
+        "max_length": "70cm",
+        "lifespan": "30",
+        "description": "The inland bearded dragon is generally considered one of the all-time best lizard pets. It is known for being alert, hardy and tame, and bearded dragon owners love watching their lizards, whether during a feeding frenzy while chasing crickets or simply interacting with each other. Bearded dragons exhibit interesting behaviors, too, such as “arm waving,” in which a female (and occasionally males) may lift a front leg in the air and “wave” it as a submissive gesture. The spiny “beard” from which the lizard gets its common name may also be extended, though it’s uncommon for tame captives to do so; dragons typically do this when alarmed.",
+        "price": "1499.99",
+        "image_url": "https://res.cloudinary.com/dyxe4g62g/image/upload/v1626278267/images/albums/MS4/animals/bearded-dragon_osyo0k.jpg",
+        "temperature": "55",
+        "care_guide": "Anyone with a bearded dragon will tell you… caring for them properly is hardly as common sense as it is with a dog or cat.\r\n\r\nFrom very specific lighting and temperature requirements, to bizarre behavior (AKA glass surfing and head bobbing), and strict dietary needs, it’s no wonder so many first time owners find themselves stressed out with a sick or unhappy new pet!\r\n\r\nLuckily, I’ve decided to put together a comprehensive Bearded Dragon Care Guide for Beginners that should take at least some of the stress out of caring for your new little guy or gal.\r\n\r\nSo, if you’d like to gain a better understanding of how to care for a bearded dragon… simply keep reading!",
+        "cage_setup": "While a hatchling dragon could live in a 20-gallon aquarium for a short time, it will quickly need a larger enclosure. A 75-gallon aquarium or equal-sized enclosure is OK for an adult dragon. Screening should be used for proper ventilation, whether as a top on an aquarium enclosure or in the construction of a custom enclosure. During warm weather bearded dragons can be kept in outdoor cages. Be sure the outdoor enclosure provides both sunny basking areas and shady retreats, as well as shelter from rain. Having access to the sun outdoors provides healthy UV. Bearded dragons like to climb, so some sturdy branches are welcome in their enclosures.",
+        "lighting": "In addition to the basking spotlight, provide full-spectrum UVB (ultraviolet) lighting over the rest of the enclosure. This lighting is critically important for dragons that are kept indoors, as it assists them in synthesizing vitamin D3, which aids in calcium absorption. There are many types of lights available; consult with store employees and read the packaging to determine the best for your setup.",
+        "heating": "Bearded dragons like it hot. A basking site of about 40 degrees Celsius works well for them. The basking site can be provided by a spotlight positioned over a rock, branch, etc. at one end of the enclosure. Keeping the spotlight at one end of the cage will allow your dragon to thermoregulate (move between a cooler end of the enclosure and the hotter end with the basking area). The cooler end of the enclosure can be kept at about 30 degrees.",
+        "feeding_schedule": "Bearded dragons are omnivorous, meaning they eat both animal and plant matter. They are not usually picky and eat with gusto. Insects, such as crickets and mealworms, should be dusted with a vitamin/mineral supplement and calcium. Dusting can be achieved by placing the insects in a plastic bag with some of the powder, and shaking the bag to lightly coat the insects prior to offering them to your lizards.\r\n\r\nAlso offer bearded dragons finely chopped veggies (such as romaine lettuce, zucchini, carrots, etc.), greens (collard, mustard, dandelion, etc.) and fruit (kiwi, banana, mango, etc.). Use healthy, vitamin-rich items; sprinkle the appropriate amount of powdered supplements on these foods, too. Avoid iceberg lettuce because it is not nutritious.  You can also feed commercially available foods from the major reptile product manufacturers as well. These foods are formulated specifically for the bearded dragon and can be a great addition to the fresh foods that your bearded dragon eats every day.\r\n\r\nBearded dragons will also eat pinky mice, and a wide variety of nutritionally balanced manufactured diets are available at pet stores, too. Again, if you keep your dragons on sand, offer food on a shallow dish rather than placing it directly on the substrate.",
+        "known_problems": "Metabolic bone disease is a bone condition that results from a lack of calcium in the blood. Always replace your monitor’s UVB bulb every six months and make sure its diet is high in calcium. Poor nutrition and a lack of UVB light leads to low calcium, which in turn triggers the release of calcium from the bone. This results in soft bones that fracture easily.",
+        "other_information": "https://www.reptilesmagazine.com/bearded-dragon-care-sheet/",
+        "other_information_name": "Reptiles Magazine"
+    }
+}, {
+    "model": "animals.animal",
+    "pk": 3,
+    "fields": {
+        "category": 3,
+        "animal_id": "0003",
+        "name": "Red Eyed Tree Frog",
+        "latin_name": "Agalychnis callidryas",
+        "country": "Central and South America",
+        "climate": "Rain Forrest",
+        "temperament": "Docile",
+        "food": "Insects",
+        "min_tank_size": "60cm x 40cm",
+        "max_length": "7.5cm",
+        "lifespan": "5",
+        "description": "This species has large, bright red eyes with vertically narrowed pupils. The red eyed tree frog is very colorful, with a vibrant green body, yellow and blue vertical stripes along its side, a white underside, and brightly colored orange or red feet. Additionally, they have sticky pads on their toes that allow them to cling onto leaves . The skin on the red eyed treefrog's belly is soft and fragile, whereas the back is thicker and rougher. On average, the males are about two inches long, and the females are slightly bigger at around 3 inches.",
+        "price": "1999.99",
+        "image_url": "https://res.cloudinary.com/dyxe4g62g/image/upload/v1626278397/images/albums/MS4/animals/Red_Eyed_Tree_Frog_onijxl.jpg",
+        "temperature": "",
+        "care_guide": "",
+        "cage_setup": "",
+        "lighting": "",
+        "heating": "",
+        "feeding_schedule": "",
+        "known_problems": "",
+        "other_information": "",
+        "other_information_name": ""
+    }
+}, {
+    "model": "animals.animal",
+    "pk": 4,
+    "fields": {
+        "category": 1,
+        "animal_id": "0004",
+        "name": "Western Hognose Snake",
+        "latin_name": "Heterodon nasicus",
+        "country": "USA",
+        "climate": "Desert",
+        "temperament": "Defensive",
+        "food": "Rodents",
+        "min_tank_size": "60cm x 40cm",
+        "max_length": "60cm",
+        "lifespan": "15",
+        "description": "The western hognose snake is a relatively small, stout-bodied snake. Its color and pattern is highly variable between subspecies, although most specimens appear much like rattlesnakes to the untrained eye, which appears to be Batesian Mimicry. Males are considerably smaller than females, with adults rarely exceeding a total length (including tail) of 40–50 cm (15–20 inches). This snake gets its common name, \"hognose\", from the modified rostral (nose) scale that is formed in an upturned manner, providing a very \"hog-like\" look. Additionally, this adaptation makes these snakes adept burrowers.\r\n\r\nThe species is not dangerous to humans, but there exists scientific debate regarding whether the mild toxins in the hognose's bite result from saliva, harmful to its preferred wild food source – toads – or an extremely mild venom produced in glands connecting to the hognose's minuscule rear fangs. In either case, no deaths or systemic effects from the extremely rare bite from this rear-fanged snake have been recorded. Although bites may uncommonly be medically significant, the species is not regarded as venomous.\r\n\r\nIn captivity, the species has been bred into about 52 different \"designer\" color morphs.",
+        "price": "1799.99",
+        "image_url": "https://res.cloudinary.com/dyxe4g62g/image/upload/v1626011389/images/albums/MS4/animals/western-hognose_agjlq8.jpg",
+        "temperature": "",
+        "care_guide": "",
+        "cage_setup": "",
+        "lighting": "",
+        "heating": "",
+        "feeding_schedule": "",
+        "known_problems": "",
+        "other_information": "",
+        "other_information_name": ""
+    }
+}, {
+    "model": "animals.animal",
+    "pk": 5,
+    "fields": {
+        "category": 1,
+        "animal_id": "0005",
+        "name": "Kenyan sand boa",
+        "latin_name": "Gongylophis colubrinus",
+        "country": "Kenya",
+        "climate": "Desert",
+        "temperament": "Docile",
+        "food": "Rodents",
+        "min_tank_size": "60cm x 40cm",
+        "max_length": "91cm",
+        "lifespan": "15",
+        "description": "Adult female specimens of G. colubrinus are rarely more than 91 cm (3 feet) in total length (including tail). The Kenyan sand boa is heavily built with a small head, small eyes, and a short tail. The color pattern may consist of a yellow or orange coloration overlaid with dark brown splotches. The belly is white or cream colored. It is readily available in the pet trade due to its small size, docility and ease of care. In recent years there have been a number of new morphs made available by both commercial and hobby breeders. Some of the more popular morphs available include anerythristic Kenyan sand boas (black and white lacking orange/red simple recessive trait), albino Kenyan sand boas (lacking black pigment simple recessive), snow KSBs (double recessive combination of an anery and albino), stripes (normal colored, anerythristic, albino and snow), hypo/ghost, anerythristic KSBs, paradox albinos (simple recessive), paradox snows (double recessive trait), splash (recessive), paint (recessive) and stripe combinations with any of the listed recessive traits. In addition many line bred traits have been accentuated on the above morphs, such as Nuclears (extreme red), High Whites, Reduced Patterns as examples.",
+        "price": "700.00",
+        "image_url": "https://res.cloudinary.com/dyxe4g62g/image/upload/v1626281255/images/albums/MS4/animals/kenyan-sand-boa_uif0hc.jpg",
+        "temperature": "",
+        "care_guide": "",
+        "cage_setup": "",
+        "lighting": "",
+        "heating": "",
+        "feeding_schedule": "",
+        "known_problems": "",
+        "other_information": "",
+        "other_information_name": ""
+    }
+}, {
+    "model": "animals.animal",
+    "pk": 6,
+    "fields": {
+        "category": 1,
+        "animal_id": "0006",
+        "name": "Boa Constrictor",
+        "latin_name": "Boa constrictor",
+        "country": "South America",
+        "climate": "Tropical",
+        "temperament": "Docile",
+        "food": "Rodents",
+        "min_tank_size": "120cm x 60cm",
+        "max_length": "3.5m",
+        "lifespan": "30",
+        "description": "The boa constrictor (Boa constrictor), also called the red-tailed boa or the common boa, is a species of large, non-venomous, heavy-bodied snake that is frequently kept and bred in captivity. The boa constrictor is a member of the family Boidae, found in tropical South America, as well as some islands in the Caribbean. A staple of private collections and public displays, its color pattern is highly variable yet distinctive. Nine subspecies are currently recognized, although some of these are controversial.",
+        "price": "999.99",
+        "image_url": "https://images.unsplash.com/photo-1551225249-cb5dd379b29b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1971&q=80",
+        "temperature": "",
+        "care_guide": "",
+        "cage_setup": "",
+        "lighting": "",
+        "heating": "",
+        "feeding_schedule": "",
+        "known_problems": "",
+        "other_information": "",
+        "other_information_name": ""
+    }
+}, {
+    "model": "animals.animal",
+    "pk": 7,
+    "fields": {
+        "category": 1,
+        "animal_id": "0007",
+        "name": "Garter snake",
+        "latin_name": "Thamnophis sirtalis sirtalis",
+        "country": "USA",
+        "climate": "Desert",
+        "temperament": "Docile",
+        "food": "Rodents, Insects & Fish",
+        "min_tank_size": "60cm x 40cm",
+        "max_length": "1.2m",
+        "lifespan": "10",
+        "description": "Garter snakes are present throughout most of North America. They have a wide distribution due to their varied diets and adaptability to different habitats, with varying proximity to water; however, in the western part of North America, these snakes are more aquatic than in the eastern portion. Garter snakes populate a variety of habitats, including forests, woodlands, fields, grasslands, and lawns, but never far away from some form of water, often an adjacent wetland, stream, or pond. This reflects the fact that amphibians are a large part of their diet. Garter snakes are often found near small ponds with tall weeds.",
+        "price": "599.99",
+        "image_url": "https://res.cloudinary.com/dyxe4g62g/image/upload/v1626283713/images/albums/MS4/animals/garter-snake_oz5jvd.jpg",
+        "temperature": "",
+        "care_guide": "",
+        "cage_setup": "",
+        "lighting": "",
+        "heating": "",
+        "feeding_schedule": "",
+        "known_problems": "",
+        "other_information": "",
+        "other_information_name": ""
+    }
+}, {
+    "model": "animals.animal",
+    "pk": 8,
+    "fields": {
+        "category": 1,
+        "animal_id": "0007",
+        "name": "Burmese Python",
+        "latin_name": "Python bivittatus",
+        "country": "South East Asia",
+        "climate": "Rain Forrest",
+        "temperament": "Defensive",
+        "food": "Rodents",
+        "min_tank_size": "300cm x 100cm",
+        "max_length": "7m",
+        "lifespan": "20",
+        "description": "The Burmese python occurs throughout Southern and Southeast Asia, including eastern India, southeastern Nepal, western Bhutan, southeastern Bangladesh, Myanmar, Thailand, Laos, Cambodia, Vietnam, northern continental Malaysia, and southern China in Fujian, Jiangxi, Guangdong, Hainan, Guangxi, and Yunnan. It also occurs in Hong Kong, and in Indonesia on Java, southern Sulawesi, Bali, and Sumbawa. It has also been reported in Kinmen. The Burmese python is often found near marshes and swamps, and is sometimes semiaquatic, but can also be found in trees.\r\n\r\nIt is an excellent swimmer and needs a permanent source of water. It lives in grasslands, marshes, swamps, rocky foothills, woodlands, river valleys, and jungles with open clearings. It is a good climber and has a prehensile tail. It can stay in water for 30 minutes but mostly stays on land.",
+        "price": "2500.00",
+        "image_url": "https://res.cloudinary.com/dyxe4g62g/image/upload/v1626283804/images/albums/MS4/animals/burmese-python_zqlhxb.jpg",
+        "temperature": "",
+        "care_guide": "",
+        "cage_setup": "",
+        "lighting": "",
+        "heating": "",
+        "feeding_schedule": "",
+        "known_problems": "",
+        "other_information": "",
+        "other_information_name": ""
+    }
+}, {
+    "model": "animals.animal",
+    "pk": 9,
+    "fields": {
+        "category": 2,
+        "animal_id": "0008",
+        "name": "collared lizard",
+        "latin_name": "Crotaphytus collaris",
+        "country": "USA",
+        "climate": "Desert",
+        "temperament": "Docile",
+        "food": "Insects",
+        "min_tank_size": "60cm x 40cm",
+        "max_length": "30cm",
+        "lifespan": "8",
+        "description": "The collared lizard (Crotaphytus collaris) is distinguished by the two black collars around its neck. Adult males have bright green scales as well as tan, olive, brown, bluish and yellow scales. Females are less colorful than the males. Both have whitish bellies and large heads.",
+        "price": "1499.99",
+        "image_url": "https://res.cloudinary.com/dyxe4g62g/image/upload/v1626532504/images/albums/MS4/animals/Male-Eastern-Collared-Lizard_z9laf1.jpg",
+        "temperature": "35",
+        "care_guide": "If you are thinking of keeping collared lizards as something for you or your child to pet and handle you should have think first about the suitability of collared lizards.  As previously mentioned they are capable of running at great speeds and do not like to have their movement restricted.  From my own experience I have spent many a time trying to catch a collared that has escaped while my back was turned for only a second, which can be stressful to the lizard if he is not used to being allowed out of his vivarium and even worse if you have an external door open.  They will climb up high to your shoulder or head and will sit there quite patiently scanning their surroundings for hours, but again beware that they may at any time make a dash for freedom. Once your collared is used to being handled (hopefully you will have bought a captive bred lizard that has always been around people) he should be friendly and have no issues with being held, just remember that they dont like their movement to be restricted and you'll be onto a winner !!",
+        "cage_setup": "Collared lizards are normally quite shy and will require partial and full hiding places along the width of the enclosure. To make sure there is not too much open space for a juvenile we provide a lot more decorations to begin with and slowly remove them as the lizard grows.",
+        "lighting": "hichever lamp you choose we would advise mounting it to the ceiling, close to the back wall. This should provide a nice UV gradient from the back of the enclosure towards the front. In this configuration we achieve a temperature gradient along the length and a UV gradient along the width meaning that whatever the lizards requirements they can find the perfect position within the enclosure.\r\n\r\nThough the lizard is a basking species it may desire some time in an area with no light. To achieve this we would provide partial and full hiding spots throughout the enclosure.\r\n\r\nAt night, all of the lights should go off and the enclosure should be completely dark. This should make sure that the lizard has a clear day night cycle.",
+        "heating": "Naturally, collared lizards spend a long time basking in the full heat of the sun. As such they require a warm basking area of 35c during the day. We try to provide this heat over 1/3 of the enclosure while letting the rest of the enclosure cool on the opposite side. To achieve this we attach a strong basking lamp to the ceiling of the enclosure on one side. This is controlled by a dimming thermostat to make sure that the temperature is kept correct throughout the day. The basking lamp is left on for 10-12 hours per day.",
+        "feeding_schedule": "Collared lizards are insectivores meaning that they will eat a varied diet insects.\r\n\r\nFor the bulk of the diet we would recommend brown crickets. They are very nutritious, fairly easy for the lizard to hunt, widely available and great value for money. If your lizard will not take them, black crickets and locust are also a brilliant alternative. Every now and again you might want to provide your lizard a treat, for this purpose you could feed: waxworms, calciworms, cockroaches, mealworms or beetle grubs. The grubs and worms tend to be quite fatty so we normally offer these a maximum of once or twice a week. Mealworms, morio worms and cockroaches can be difficult to digest so we would normally only provide these to mature lizards (18 months or older) and only once or twice a week.\r\n\r\nWe always include a medium or large sized water bowl in the lizards enclosure. You might never see the lizard drink from it but it should be there as a back-up. You might notice the lizard use it for bathing, this is usually to cool down or to help loosen it's shedding skin. Both the food dish and water bowl should be kept on the cool side of the enclosure to prevent them from raising the humidity in the enclosure.",
+        "known_problems": "Metabolic Bone Disease or MBD can occur if proper UVB lighting and calcium supplementation is not offered.  Make sure to change UVB bulbs at least every six months and dust insects regularly with calcium powder.",
+        "other_information": "https://www.reptilecentre.com/info-eastern-collared-lizard-care-sheet",
+        "other_information_name": "Reptile Center"
+    }
+}, {
+    "model": "animals.animal",
+    "pk": 10,
+    "fields": {
+        "category": 2,
+        "animal_id": "0009",
+        "name": "leopard gecko",
+        "latin_name": "Eublepharis macularius",
+        "country": "Afghanistan",
+        "climate": "Desert",
+        "temperament": "Docile",
+        "food": "Insects",
+        "min_tank_size": "60cm x 40cm",
+        "max_length": "25",
+        "lifespan": "20",
+        "description": "The common leopard gecko (Eublepharis macularius) is a ground-dwelling lizard native to the rocky dry grassland and desert regions of Afghanistan, Iran, Pakistan, India, and Nepal. The common leopard gecko has become a popular pet, and due to extensive captive breeding, is sometimes referred to as the first domesticated species of lizard.",
+        "price": "799.99",
+        "image_url": "https://res.cloudinary.com/dyxe4g62g/image/upload/v1626533479/images/albums/MS4/animals/leopard-gecko_eoccgp.jpg",
+        "temperature": "30",
+        "care_guide": "A popular beginner's reptile, the leopard gecko, is an easily handled, small lizard from Afghanistan, Pakistan, northwest India, and Iran. Compared to other lizards, they require minimal care. They have perky personalities and make movements that are interesting to watch. Leopard geckos are commonly yellow, white, and spotted with black dots. Hatchlings are striped and gradually change to the spotted appearance. There are several colorful and patterned morphs or variations. Certain colors are more desired and valuable, while the typical wild-type or normal coloration is readily available and most affordable.",
+        "cage_setup": "A 15- to 20-gallon tank is large enough for two to three leopard geckos, but there should only be one male per habitat, and only keep males and females together if you want to deal with breeding. Old fish tanks that don't hold water anymore also work perfectly well for leopard geckos.\r\n\r\nProvide half logs as hiding and climbing space. Commercial reptile caves and simple cardboard boxes are also good options. A damp hide box can help with shedding.\r\n\r\nSpot clean the cage once a day to remove feces. About once a month, take everything out, throw out the substrate, and scrub and disinfect the cage and all the items in it to reduce the buildup of bacteria.",
+        "lighting": "Being nocturnal, leopard geckos are most active at night and do not require a lot of UV lighting. In the wild, these creatures are also active at dawn and sunset and get UV exposure at those hours of scant sunlight. A small amount of UVA and UVB light (2% to 7%) can go a long way to keeping leopard geckos healthy and may reduce the risk of metabolic bone disease.\r\n\r\nYour lizard will need incandescent lighting and heat from that source to mimic the sunlight. In the summer, give them about 14 hours of \"sun\" per day. And, in winter, the lizard will need about 12 hours of that light. For ease of care, you can automate the cage lighting by putting the lights on a timer.",
+        "heating": "You can use a regular white light incandescent heat bulb to provide a basking spot during the day. A red heat bulb, blue, or purple heat bulb, or ceramic heat emitter can provide supplemental heat at night.\r\n\r\nUndertank heating pads work for heating, but they may not be the most effective for regulating your gecko's temperatures properly. If your gecko burrows down to the glass surface of the tank, an undertank heating pad might cause burns. Never use hot rocks.\r\n\r\nAs coldblooded creatures, reptiles need to regulate their own body temperature. Reptiles like a range of temperature or thermal gradient, so they can adjust their body warmth. Provide a daytime basking spot of 88 degrees Fahrenheit (31 degrees Celsius) with a thermal gradient down to about 75 Fahrenheit (around 24 Celsius). At night the temperature can drop to a range of 70 to 75 Fahrenheit (21 to 24 Celsius). Make sure your gecko is not exposed to any drafts, and do not place the tank next to a window or door.",
+        "feeding_schedule": "Leopard geckos are insectivores. Feed a variety of crickets, waxworms, and, in moderation, mealworms. On occasion, you can try to feed a pinky mouse to an adult gecko. To make sure that your gecko does not ingest any substrate, you can feed your gecko in an empty tank.\r\n\r\nJuveniles need to be fed several crickets every day. Adults can skip several days between feedings. Before you feed the insects to your pet, they must be gut-loaded or fed a nutritious meal 24 hours before feeding. You will also need to coat the insects with a calcium/vitamin D3 supplement before you feed them to your lizard. To do so, put the crickets or worms in a ziplock bag with some of the powder supplement. Shake the bag quickly and drop the insect into the tank with your lizard. Hatchlings and juveniles need the calcium/vitamin supplement at every feeding; adults only need it at every other feeding.\r\n\r\nProvide a shallow dish of fresh water for your leopard gecko at all times. The water bowl will help add some humidity to the enclosure, and your gecko will drink from the bowl. You may even find a gecko voluntarily soaking in its water bowl.",
+        "known_problems": "One of the most severe conditions that can affect leopard geckos is metabolic bone disease. Just like humans, geckos become ill if they don't get enough calcium and vitamin D. Metabolic bone disease causes painful spine and limb deformities. Signs of this disease include poor appetite and tremors. \r\n\r\nIf you notice your gecko developing armpit bubbles, these are not dangerous. They are a sign that your lizard is storing something. These bubbles can contain fat, vitamins, protein, calcium, or other minerals and are common in overweight geckos. Usually, these bubbles go away when the lizard returns to a healthy weight.\r\n\r\nLeopard geckos also are prone to gastroenteritis, which comes from a bacterial infection. If your gecko has watery stools or its tail shrinks, these may be signs of gastroenteritis. This condition is potentially fatal but is treatable if caught early.\r\n\r\nAnd like other lizards, leopard geckos that are undernourished or live in a cage with insufficient moisture may develop dysecdysis. This condition, which looks like dry skin, causes the gecko to have difficulty shedding and can affect its vision. \r\n\r\nFinally, leopard geckos are susceptible to a variety of respiratory infections, including pneumonia. Wheezing or bubbles of mucus around its nasal passages and mouth are a sign that your leopard gecko is having respiratory problems. \r\n\r\nAll of these conditions should receive treatment from an exotics veterinarian who specializes in reptiles.",
+        "other_information": "https://www.thesprucepets.com/leopard-geckos-1236911",
+        "other_information_name": "the spruce pets"
+    }
+}, {
+    "model": "animals.animal",
+    "pk": 11,
+    "fields": {
+        "category": 2,
+        "animal_id": "0010",
+        "name": "Ackie Monitor",
+        "latin_name": "Varanus Acanthurus",
+        "country": "Australia",
+        "climate": "Desert",
+        "temperament": "Defensive",
+        "food": "Rodents & Insects",
+        "min_tank_size": "120cm x 60cm",
+        "max_length": "70cm",
+        "lifespan": "30",
+        "description": "The Ackie monitor (Varanus acanthurus) is an eye-catching reptile with a rather intimidating look! Often referred to as the Spiny-tailed Monitor or Ackies dwarf monitor, these lizards are part of the same genus as the Komodo Dragon.",
+        "price": "2499.99",
+        "image_url": "https://res.cloudinary.com/dyxe4g62g/image/upload/v1626533975/images/albums/MS4/animals/Ackies-dwarf-monitor_iosch5.jpg",
+        "temperature": "55",
+        "care_guide": "Ackie Monitors are friendlier, smaller and easier to care for than many other types of Monitor lizard. Their intelligent nature also makes Ackies loved by many reptile enthusiasts. But, while Ackie monitors are one of the easiest monitor lizards to care for, they are not a lizard for beginners.\r\n\r\nAckies monitors are a big responsibility.\r\n\r\nThese lizards can live for 20 years and require at least a 120-gallon tank with two feet of loose substrate. As an active species that climbs and digs plenty of décor is needed for enrichment. Branches, logs, cardboard boxes, rocks, and plywood can all withstand an Ackie’s explorations.\r\n\r\nIf you are willing to put in the time and money it takes to care for one, they are one of the best and most rewarding reptiles for intermediate and advanced keepers.",
+        "cage_setup": "Bigger is always better when it comes to cage sizes for Ackie monitors. This monitor needs a lot of space to be comfortable. At a minimum, adults need a 120-gallon tank and juveniles can be kept in smaller 40-gallon enclosures as it helps them to feel secure.\r\n\r\nAckie monitors also like their cage to be hot!\r\n\r\nThey need a basking spot in their enclosure with a surface temperature of 120 to 150°F. The cooler side should have an ambient temperatures of 80 to 85°F. As daytime lizards, Ackies also need a UVB light to metabolize calcium. A high-output, 26-Watt UVB bulb should be used for 12 hours a day and replaced every six months.\r\n\r\nThese lizards also need a relatively high humidity. Keep their enclosure between 65 and 85% humidity by misting the substrate with a spray bottle multiple times a day. The substrate should be slightly damp, so it retains its shape when dug into, but not so wet that it feels soggy.\r\n\r\nToo much moisture can lead to skin infections, so make sure you use a thermometer and hygrometer.\r\n\r\nAs with any pet lizard, always provide them with clean water on the cool side of their enclosure. Empty and refill the bowl daily with water free from chlorine and other contaminants.\r\n\r\nMake sure to use a bowl that fits your Ackie’s body. While they do not swim, they will soak occasionally when shedding.",
+        "lighting": "As daytime lizards,  Ackies need a UVB light to metabolize calcium. A high-output, 26-Watt UVB bulb should be used for 12 hours a day and replaced every six months.",
+        "heating": "They need a basking spot in their enclosure with a surface temperature of 120 to 150°F. The cooler side should have an ambient temperatures of 50 to 65 C.",
+        "feeding_schedule": "Expect to go through a lot of insects when keeping this pet.\r\n\r\nAckies are fierce hunters that only eat meat. In their natural habitat they mostly eat insects like grasshoppers, crickets, beetles and cockroaches. They are also known to occasionally eat small lizards and eggs. They eat the same diet year-long and show have seasonal food preferences.\r\n\r\nThe best tip for feeding your pet Ackie is to provide variety of foods.\r\n\r\nVariety provides enrichment for your lizard and also ensures that it is getting a complete diet with all of the necessary vitamins and minerals.\r\n\r\nAckies prefer live prey but can quickly adjust to eating dead or cooked food from tongs.\r\n\r\nRegardless of if you are using live or dead prey, it should be dusted with a vitamin and calcium supplement powder twice weekly. This helps to maintain your lizard’s bone health.\r\n\r\nCrickets, mealworms and Dubia cockroaches should be the main staple of an Ackie’s diet.\r\n\r\nAdults can also be given an occasion treats like: mice, raw turkey, fish, or scrambled chicken eggs. This should only be once or twice a month and care should be taken to avoid overfeeding. This species easily becomes obese due to their appetite and willingness to eat anything.",
+        "known_problems": "Many wild monitors carry parasites that they pick up through their diet. These worms can cause lethargy, weight loss and a reduced appetite. Pet Ackies are very rarely infected by parasites when fed a proper diet. You should never feed your monitor insects or other animals caught from the wild.\r\n\r\nPet species will easily become overweight if their diet is not carefully monitored. Healthy Ackie Monitors have a slim oval body shape when viewed from above. Obese individuals will start to look round. If a fully grown Ackie continues to gain weight then you are overfeeding them.\r\n\r\nMetabolic bone disease is a bone condition that results from a lack of calcium in the blood. Always replace your monitor’s UVB bulb every six months and make sure its diet is high in calcium. Poor nutrition and a lack of UVB light leads to low calcium, which in turn triggers the release of calcium from the bone. This results in soft bones that fracture easily.",
+        "other_information": "https://www.everythingreptiles.com/ackie-monitor-care-sheet/",
+        "other_information_name": "Everything Reptiles"
+    }
+}, {
+    "model": "animals.animal",
+    "pk": 12,
+    "fields": {
+        "category": 2,
+        "animal_id": "0011",
+        "name": "frilled dragon",
+        "latin_name": "Chlamydosaurus kingii",
+        "country": "Australia",
+        "climate": "Desert",
+        "temperament": "Docile",
+        "food": "Rodents & Insects",
+        "min_tank_size": "120cm x 60cm",
+        "max_length": "90cm",
+        "lifespan": "10",
+        "description": "Also known as “frillies,” frilled lizards exist in extreme southern New Guinea and north coastal Australia. It is the second largest lizard in the family Agamidae, second only to the sailfin dragon. Male Australian frilled lizards reach approximately 3 feet in length, while New Guinea males are a bit more than 2 feet long.",
+        "price": "2999.99",
+        "image_url": "https://res.cloudinary.com/dyxe4g62g/image/upload/v1626535015/images/albums/MS4/animals/frilled-lizard_dmrbr0.jpg",
+        "temperature": "60",
+        "care_guide": "Frillies are quite complacent in their enclosures and can be that way outside of them as well, but some frilled lizards do not appreciate the stress of being moved into an open area. Please do not force this on your lizard if does not seem to enjoy being outside its cage’s comfort zone. Important above all is a healthy, happy lizard in its enclosure, even if this means it will be a display animal rather than one to be handled.\r\n\r\nA stressed frilled lizard will “frill out” with its mouth open, and it will probably hiss and may even try to bite you, or bluff –bite. A frilled lizard exhibiting its defensive display can be an amazing sight, but keep in mind that getting them to exhibit it is not good for their overall health.",
+        "cage_setup": "Frilled lizards command a large, well-planned enclosure to ensure a healthy, long life, and because they are arboreal lizards, a vertically oriented cage for adults is better than a horizontal one.\r\n\r\nA 20-gallon “tall” aquarium is adequate for a single pair of juvenile frillies measuring 12 inches long. I recommend a visual barrier—such as by attaching cardboard or another material, painting the walls, etc.—on all sides of the tank except for one, the viewing side, as this will help provide the required feeling of security. Feeling exposed can lead to stressed-out frilled lizards that are excessively wary whenever something moves in the room where their enclosure is located. Plus,  the limited view makes it easier for them to focus on food when it is presented. \r\n\r\nAdult enclosures can range from 4 to 6 feet tall, at least 2½ feet deep, and 5 feet long, especially if you’re raising a breeding pair or trio of frilled lizards. Dimensions can be somewhat smaller for a single adult, but remember, height is very important. The height at which a frilled lizard can bask equates to additional feelings of security.\r\n\r\nBranches of various diameters should be placed vertically, diagonally and horizontally. Also attach a branch or shelf to the upper section of the enclosure’s rear wall. These will provide your frilled lizard(s) with plenty of comfortable perching and basking areas.",
+        "lighting": "Frilled lizards are basking lizards that require a good UVB source (mercury vapor or fluorescent) and basking bulbs for heat.",
+        "heating": "The basking area temperature should be around 115 degrees Fahrenheit, focused on a branch in the upper quadrant of the cage. Try not to get it too close to the branch, as frillies can easily burn the top of their frills by sitting under a hot light that’s too close for too long.\r\n\r\nAmbient temperatures of 85 to 90 degrees should be maintained throughout the rest of cage. Nighttime temperatures should drop to somewhere between 75 and 80 degrees. \r\n\r\nIn cooler climates or during the winter, heat tape can be used to help warm the cage bottom, or ceramic heat emitters should provide the necessary ambient temperatures inside the enclosure. Please follow installation instructions carefully to prevent lizard burns and house fires.",
+        "feeding_schedule": "The main diet for a pet frilled lizard should be comprised of insects, such as crickets, roaches, hornworms, silkworms, soldier fly larvae, superworms and canned grasshoppers (available in some stores that sell reptile supplies). All insects should be dusted with a quality calcium and vitamin D3 supplement. An occasional pinky or fuzzy mouse, depending on the size of the lizard, can also be offered.",
+        "known_problems": "If acquired as fresh imports, baby frilled lizards do relatively well, but a stool check by a veterinarian is still recommended to minimize any nasties that may be present.",
+        "other_information": "https://www.reptilesmagazine.com/frilled-lizard-care-sheet/",
+        "other_information_name": "Reptiles Magazine"
+    }
+}, {
+    "model": "animals.animal",
+    "pk": 13,
+    "fields": {
+        "category": 2,
+        "animal_id": "0012",
+        "name": "Crested Gecko",
+        "latin_name": "Correlophus ciliatus",
+        "country": "New Caledonia",
+        "climate": "Rain Forrest",
+        "temperament": "Docile",
+        "food": "Insects, prepared gecko diet & fruit",
+        "min_tank_size": "40cm x 40cm",
+        "max_length": "25cm",
+        "lifespan": "20",
+        "description": "Crested geckos are originally from New Caledonia (a group of islands between Fiji and Australia). Crested geckos are ideal reptile pets for beginners, with simple, easy- to-meet requirements. Because crested geckos are primarily tree dwellers, they make outstanding displays in naturalistic vivariums.",
+        "price": "999.99",
+        "image_url": "https://res.cloudinary.com/dyxe4g62g/image/upload/v1626535496/images/albums/MS4/animals/crested-gecko-adult_givr0g.jpg",
+        "temperature": "25",
+        "care_guide": "Newly purchased crested geckos should not be handled, but first allowed to settle in for three to four weeks to let them adjust to their new environment and to make sure they regularly feed. When you start handling your crested gecko, make handling sessions short, no more than five minutes. Baby crested geckos tend to be flighty and can be injured in the course of handling. For this reason you should wait until they are at least 3 inches SVL before handling. Crested geckos seldom bite and when they do it is of little consequence. A quick nip and let go.",
+        "cage_setup": "Baby crested geckos are best housed in large plastic terrariums or in standard (20-inch) 10-gallon reptile tanks with a screen top. An adult crested gecko should be housed in a 20-gallon tank with screen top. Larger tanks will allow for better displays. In areas with moderate to high relative humidity, crested geckos will fare well in screen cages. These tanks have the advantage of being light and easy to clean. You can keep one male and several female crested geckos together. Male crested geckos may fight, particularly when in the company of females, and should not be kept together.",
+        "lighting": "If you have live plants in your vivarium additional light can be provided by a fluorescent bulb running the length of the tank. Crested geckos tend to rest in foliage or shelters during the day and are active at night. They do not require UVB light if fed a diet that contains Vitamin D3. Turn off lights at night.",
+        "heating": "Crested geckos like temperatures of 25 to 27 degrees Celsius during the day. It can drop to the low 20s at night. In most areas this temperature range will be reached during the warm months of the year without additional heat. In summer, place crested geckos in a cool room if the temperature exceeds 30 degrees. During the winter crested geckos will tolerate night drops into the 20s.",
+        "feeding_schedule": "In this author’s opinion, the complete powdered diet marketed as Repashy Superfoods “Crested Gecko” Diet has played a key role in making these among the most popular of lizards kept as pets, because it excludes the need to feed live insects. Crested geckos thrive when fed this diet exclusively, which has been tested with thousands of geckos for more than 10 years. The diet is mixed with two parts water and offered in shallow dishes three times a week as much as these geckos will eat at a feeding. The diet is allowed to remain 24 to 36 hours before removal.\r\n\r\nIn addition to fruit, crested geckos relish insects and some hobbyists choose to offer these as either a primary diet or as supplementary diet. Crickets now sold in the pet trade are the best choice and you should select a size where length of cricket equals width of head. Crickets should be lightly coated with a vitamin/mineral supplement that contains calcium, vitamin D3 and a complement of other essential vitamins and minerals. They should be offered three times a week as a primary diet or once a week as a treat/supplement to the Crested Gecko Diet.\r\n(Editor’s note: Since the publishing of this care sheet, more manufacturers offer commercial foods for crested geckos, including, but not limited to, Exo Terra, Fluker’s, Hikari, Pangea, and Zoo Med)",
+        "known_problems": "In nature, crested geckos will usually lose their tails and end up with a tiny pointed tail nub. “Taillessness” is a normal condition for adults crested geckos. In captivity, hobbyists like their crested geckos with tails, but this requires keeping animals individually and pampered to prevent tail loss.",
+        "other_information": "https://www.reptilesmagazine.com/crested-gecko-care-sheet/",
+        "other_information_name": "Reptiles Magazine"
+    }
+}]

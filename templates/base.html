@@ -1,0 +1,220 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    {% block meta %}
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% endblock %}
+
+    {% block extra_meta %}
+    {% endblock %}
+
+    <link rel="icon" type="image/png"
+        href="https://res.cloudinary.com/dyxe4g62g/image/upload/v1625910535/images/albums/MS4/Snake_icon.svg_sfmhsz.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    {% block corecss %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+        integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% endblock %}
+
+    {% block extra_css %}
+    {% endblock %}
+
+    {% block corejs %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    </script>
+    <!-- Stripe -->
+    <script src="https://js.stripe.com/v3/"></script>
+    {% endblock %}
+
+    {% block extra_js %}
+    {% endblock %}
+
+    <title>Zoodjur {% block extra_title %}{% endblock %}</title>
+</head>
+
+<body class="transparent">
+    <header>
+        <div class="container-fluid no-pads">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand hvr-grow" href="{% url 'home' %}">Zoodjur<span class="subtext-logo">.se</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto flex-nowrap">
+                        <li class="nav-item">
+                            <a href="{% url 'home' %}" class="nav-link hvr-grow">Hem</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle hvr-hang" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Sortiment
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{% url 'animals' %}">Alla djur</a>
+                                <a class="dropdown-item" href="{% url 'animals' %}?category=snakes">Ormar</a>
+                                <a class="dropdown-item" href="{% url 'animals' %}?category=lizards ">Ödlor</a>
+                                <a class="dropdown-item" href="{% url 'animals' %}?category=amphibians">Groddjur</a>
+                                <a class="dropdown-item" href="{% url 'animals' %}?category=rodents">Gnagare</a>
+                                <a class="dropdown-item" href="{% url 'animals' %}?category=birds">Fåglar</a>
+                                <a class="dropdown-item" href="{% url 'animals' %}?category=spiders">Spindlar</a>
+                                <a class="dropdown-item" href="{% url 'animals' %}?category=insects">Insekter</a>
+                            </div>
+                        </li>
+                        {% if user.is_superuser %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle hvr-hang" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Site Admin
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a href="{% url 'add_animal' %}" class="nav-link hvr-grow">Add Animal</a>
+                            </div>
+                        </li>
+                        {% endif %}
+                        <li class="nav-item">
+                            <a href="{% url 'all_animals_care' %}" class="nav-link hvr-grow">Skötselråd</a>
+                        </li>
+                        {% if user.is_authenticated %}
+                        <li class="nav-item">
+                            <a href="{% url 'profile' %}" class="nav-link hvr-grow">Mina sidor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'account_logout' %}" class="nav-link hvr-grow">Logout</a>
+                        </li>
+                        {% else %}
+                        <li class="nav-item">
+                            <a href="{% url 'account_login' %}" class="nav-link hvr-grow">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'account_signup' %}" class="nav-link hvr-grow">Registera dig</a>
+                        </li>
+                        {% endif %}
+                        <li class="nav-item">
+                            <a href="{% url 'about' %}" class="nav-link hvr-grow">Om oss</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'view_shopping_cart' %}">
+                                <div class="text-center">
+                                    <div><i class="fas fa-shopping-cart fa-lg"></i></div>
+                                    <p class="money-total">
+                                        {% if grand_total %}
+                                        {{ grand_total|floatformat:2 }}SEK
+                                        {% else %}
+                                        0.00SEK
+                                        {% endif %}
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Toasts -->
+    {% if messages %}
+    <div class="message-container justify-content-center">
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- search form taken and edited from CI walkthrough project -->
+    <div class="container mb-4">
+        <div class="col-12 my-auto py-1 py-lg-0">
+            <form method="GET" action="{% url 'animals' %}">
+                <div class="input-group w-100">
+                    <input class="form-control search-bar-custom" type="text" name="q" placeholder="Search GbgZoo.se">
+                    <div class="input-group-append">
+                        <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                            <span class="icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+    <!-- Footer -->
+    <footer class="fixed-bottom mt-4 ">
+        <div class="row justify-content-center">
+            <div class="col-md-4 left footer-info-divs">
+                <h4 class="underline">Hitta Oss:</h4>
+                <p>
+                    <i class="fas fa-phone"></i> :  033 - 340 25 10 <br>
+                    <i class="fas fa-at"></i> : kim@zoodjur.se <br>
+                    <i class="fas fa-search-location"></i> : Gimlegatan 5, 504 30 Borås <br>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 follow-us">
+                <h4 class="underline">Följ Oss:</h4>
+                <br>
+                <span>
+                    <a class="hvr-grow" href="http://facebook.com" target="_blank"><i
+                            class="fab fa-facebook-square facebook"></i></a>
+                    <a class="hvr-grow" href="http://instagram.com/zoodjur" target="_blank"><i
+                            class="fab fa-instagram hvr-grow instagram"></i></a>
+                </span>
+            </div>
+            <div class="col-md-4 right footer-info-divs">
+                <h4 class="underline">Om Oss</h4>
+                <p>
+                    Ett av Sveriges största utbud av reptiler, groddjur och husdjursvårdsprodukter. <br> Vår butik är öppen Mon - Fre 10:00 - 19:00 och Lor - Son 11:00 - 16:00.
+
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    {% block postloadjs %}
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
+    <script type="text/javascript">
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+    {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+[{
+    "pk": 1,
+    "model": "animals.animal",
+    "fields": {
+    "name": "Ball Python",
+    "latin_name": "Python regius",
+    "climate": "arrid",
+    "min_tank_size": "90cm x 60cm",
+    "description": "The ball python (Python regius), also called the royal python, is a python species native to West and Central Africa, where it lives in grasslands, shrublands and open forests. It is listed as Least Concern on the IUCN Red List because of its wide distribution. It is threatened by hunting for its meat and for the international pet trade. This nonvenomous constrictor is the smallest of the African pythons, growing to a maximum length of 182 cm (72 in). The name 'ball python' refers to its tendency to curl into a ball when stressed or frightened.",
+    "price": "700.00",
+    "image": "#",
+    "image_url": "https://res.cloudinary.com/dyxe4g62g/image/upload/v1626005649/images/albums/MS4/animals/ball-python_gfiuo0.jpg",
+    "temperament": "Docile",
+    "food": "Rodents",
+    "category": 1
+    }
+}
+]

@@ -1,0 +1,28 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Logga ut" %}{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6 animal-details-section box-shadow">
+      <h1 class="white text-center">{% trans "Logga ut" %}</h1>
+
+      <p class="white text-center">{% trans 'Är du säker på att du vill logga ut?' %}</p>
+
+      <form method="post" action="{% url 'account_logout' %}">
+        {% csrf_token %}
+        {% if redirect_field_value %}
+        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+        {% endif %}
+        <button class="btn btn-s btn-success hvr-grow" type="submit">{% trans 'Logga ut' %}</button>
+        <a class="btn btn-s btn-danger hvr-grow" href="{% url 'home' %}" type="submit">Avbryt</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
