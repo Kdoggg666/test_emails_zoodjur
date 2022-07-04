@@ -30,7 +30,7 @@ else:
     DEBUG = False
 
 
-ALLOWED_HOSTS = ['zoodjur.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['zoodjur-new.herokuapp.com', 'localhost']
 
 
 # Application definition
